@@ -1,0 +1,217 @@
+*{margin:0; padding:0; border:0;box-sizing: border-box;}
+li,ul{list-style:none;}
+	a{text-decoration:none; color:#000;}
+	
+.cf:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+@font-face{
+    src: url("../font/PathwayGothicOne-Regular.ttf");
+    font-family:"PathwayGothicOne";	
+}
+
+.noticeCM{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: none;
+}
+.notice #titleBox{
+    width: 780px;
+    height: 100px;
+    margin: 0 auto;
+}
+#titleBox h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 5px;
+}
+#titleBox input{  
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 1s;
+}
+#titleBox input:focus{
+    border-color: #FFDCC1;
+    box-shadow: 0 0 8px 0 #FFDCC1;
+}
+#txtBox{
+    width: 780px;
+    height: 700px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-top: 4px solid #FFDCC1;
+}
+#txtBox .txtOptionButton{
+    width: 100%;
+    height: 41px;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #dadada;
+    position: relative;
+    z-index: 9999;
+    background-color: #fff;
+}
+.txtOptionButton > ul{
+    width: 100%;
+    height: 100%;
+}
+.txtOptionButton > ul > li{
+    width: 100%;
+    height: 100%;
+}
+.txtOptionButton > ul > li > ul{
+    width: 100%;
+    height: 100%;
+}
+.txtOptionButton > ul > li > ul > li{
+    width: 6.25%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.txtOptionButton > ul > li > ul > li > input{
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+}
+.txtOptionButton > ul > li > ul > li.on{
+    background-color: #F3F1F1;
+}
+.txtOptionButton > ul > li > ul > li.boxCm{
+    position: relative;
+}
+.txtOptionButton > ul > li > ul > li .boxCm{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #F3F1F1;
+    background-color: #fff;
+    display: none;
+    z-index: 99;
+}
+.txtOptionButton > ul > li > ul > li.fontsize .fontsizeBox{height: 300px;}
+.txtOptionButton > ul > li > ul > li.front .frontBox{height: 140px;}
+.txtOptionButton > ul > li > ul > li.trans .textTrans{height: 105px;}
+.txtOptionButton > ul > li > ul > li.titleStyle .titleStyleBox{height: 70px;}
+.txtOptionButton > ul > li > ul > li.titleNumber .titleNumberBox{height: 70px;}
+.txtOptionButton > ul > li > ul > li.enlargement .enlargementBox{height: 70px;}
+.boxCm > ul{
+    width: 100%;
+    height: 100%;
+}
+.boxCm > ul > li{
+    width: 100%;
+    position: relative;
+}
+.fontsizeBox > ul > input{
+    width: 100%;
+    padding: 5px 10px;
+    position: relative;
+    height: 11.11%;
+    text-align: center;
+    line-height: 2;
+    font-size: 13px;
+    cursor: pointer;
+    color: #333;
+}
+.textTrans > ul > li{height: 33.33%;}
+.frontBox > ul > li{height: 25%;}
+.titleStyleBox > ul > input{height: 50%;}
+.titleNumberBox > ul > li{height: 50%;}
+.enlargementBox > ul > li{height: 50%;}
+.titleStyle{
+    text-align: center;
+}
+#titleStyle{
+    padding: 4px 8px;
+}
+.titleStyleBox > ul > input{
+    height: 50%;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    outline-style: none;
+    line-height: 3;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0 5px;
+}
+.boxCm > ul > li > img{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.upload #imageFileOpenInput{
+    position: absolute;
+    top: 100%;
+    right: -100px;
+    width: 250px;
+    height: 63px;
+    background-color: #f5f5f5;
+    padding: 17px 30px;
+    z-index: 999;
+    border: 3px solid #5b5b5b;
+    display: none;
+}
+.video #videoFileOpenInput{
+    position: absolute;
+    top: 100%;
+    right: -50px;
+    width: 250px;
+    height: 63px;
+    background-color: #f5f5f5;
+    padding: 17px 30px;
+    z-index: 999;
+    border: 3px solid #5b5b5b;
+    display: none;
+}
+video{height: 200px;}
+
+#txtBox .txtSection{
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+}
+.txtSection #txt{
+    width: 100%;
+    height: 99%;
+    padding: 10px;
+    outline: none;
+}
+.txtSection img{
+    height: 150px;
+}
+.OK{
+    width: 780px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.OK .OKbtn{
+    width: 100px;
+    height: 40px;
+    background-color: #5b5b5b;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 0%;
+    margin-top: 15px;
+    outline: none;
+}

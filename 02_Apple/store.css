@@ -1,0 +1,800 @@
+.top-comment span{
+    margin-right: 5px;
+}
+.top-comment b{
+    color: #06c;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    margin-left: 5px;
+}
+.productList{
+    min-height: 248px;
+    height: 248px;
+    background-color: #F5F5F7;
+}
+.productList .content{
+    width: 1024px;
+    height: 100%;
+}
+.productList .content .left{
+    width: 70%;
+    height: 100%;
+    float: left;
+    max-width: 640px;
+    padding: 80px 0 64px;
+    letter-spacing: -3px;
+}
+.productList .content .left h1{
+    color: #1d1d1f;
+    font-size: 43px;
+    display: inline-block;
+}
+.productList .content .left span{
+    color: #6e6e73;
+    font-size: 43px;
+    font-weight: 900;
+}
+.productList .content .right{
+    width: 30%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding: 90px 0 74px;
+    position: relative;
+}
+.productList .content .right .rightQimg{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+}
+.productList .content .right .rightQbox{
+    display: inline-block;
+}
+.productList .content .right .rightQbox span{
+    display: block;
+    font-size: 12px;
+    font-family: "Noto Sans KR";
+    padding: 2px 0;
+}
+.productList .content .right .rightQbox span:first-child{
+    font-weight: bold;
+    color: #1d1d1f;
+}
+.productList .content .right .rightQbox span:last-child{
+    font-weight: 500;
+    color: #06c;
+}
+.productList2{
+    min-height: 248px;
+    height: 174px;
+    background-color: #F5F5F7;
+    padding-bottom: 62px;
+    position: relative;
+}
+.productList2 .content{
+    width: 1160px !important;
+    height: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.productList2 .content.swiper {
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+}
+.productList2 .content.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 136px;
+    height: 148px;
+    padding: 18px 8px 16px;
+    overflow: hidden;
+    background-color: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productList2 .content.swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    max-height: 78px;
+    object-fit: cover;
+}
+.productList2 .content.swiper .swiper-slide span{
+    color: #1d1d1f;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.list{
+    min-height: 248px;
+    height: 629px;
+    background-color: #F5F5F7;
+    padding-bottom: 54px;
+    position: relative;
+    overflow: hidden;
+}
+.list h2{
+    width: 1024px;
+    color: #1d1d1f;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+.list h2 span{
+    color: #6e6e73;
+}
+.swiper2 {
+    width: 100%;
+    height: 100%;
+  }
+.swiper3 {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide2 {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    width: 400px !important;
+    height: 500px !important;
+    border-radius: 18px;
+    /* margin-right: 20px; */
+    overflow: hidden;
+    transition: 0.3s;
+    background-size: 400px 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    margin: 0;
+}
+.swiper-slide3 {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    width: 313px !important;
+    height: 240px !important;
+    border-radius: 18px;
+    /* margin-right: 20px; */
+    overflow: hidden;
+    transition: 0.3s;
+    background-size: 313px 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+.swiper-button-disabled{
+    opacity: 0 !important;
+}
+.swiper-slide2:first-child{
+    opacity: 0;
+    width: 20.833vw !important;
+    margin-right: 2.865vw !important;
+}
+.swiper-slide2:last-child{
+    margin-right: 2.604vw;
+}
+.swiper-slide2:hover{
+    transform:scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0px 0px 8px #d2d2d7;
+}
+.swiper-slide3:first-child{
+    opacity: 0;
+    width: 20.833vw !important;
+    margin-right: 55px !important;
+}
+.swiper-slide3:last-child{
+    margin-right: 2.604vw;
+}
+.swiper-slide3:hover{
+    transform:scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0px 0px 8px #d2d2d7;
+}
+/*newProduct-list*/
+.newProduct-list .swiper-slide2:nth-child(2){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-13-pro-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052290504);
+}
+.newProduct-list .swiper-slide2:nth-child(3){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-air-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645636337374);
+}
+.newProduct-list .swiper-slide2:nth-child(4){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-mac-studio-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645043848581);
+}
+.newProduct-list .swiper-slide2:nth-child(5){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-studio-display-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645043848762);
+}
+.newProduct-list .swiper-slide2:nth-child(6){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-se-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052592978);
+}
+.newProduct-list .swiper-slide2:nth-child(7){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-13-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645052290452);
+}
+.newProduct-list .swiper-slide2:nth-child(8){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-bands-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645052880599);
+}
+
+/*specialSale-list*/
+.specialSale-list .swiper-slide2:nth-child(2){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-edu-202108_GEO_KR?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1627513218000);
+}
+.specialSale-list .swiper-slide2:nth-child(3){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-small-business-202108?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1627318784000);
+}
+.specialSale-list .swiper-slide2:nth-child(4){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-refurb-202108?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1627318783000);
+}
+
+.swiper-slide2 div{
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+}
+.swiper-slide2 div > span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e6e73;
+    padding-bottom: 8px;
+    font-family: 'NEXON Lv2 Gothic';
+}
+.swiper-slide2 div h3{
+    color: #1d1d1f;
+    line-height: 1.25;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.swiper-slide2 div h3 span{
+    font-size: 24px;
+}
+.swiper-slide2 div p{
+    color: #1d1d1f;
+    line-height: 1.4;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.swiper-slide2 div p b{
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.swiper-slide2 div > span.white,
+.swiper-slide2 div h3.white,
+.swiper-slide2 div p.white{color: #fff !important;}
+
+/*pager btn*/
+.swiper-button-next, .swiper-button-prev{
+    visibility: visible;
+    background-color: #999;
+    opacity: 0.6;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50%;
+    font-size: 10px;
+    transform: scale(0.3);
+    opacity: 0;
+}
+.swiper2:hover .swiper-button-next, .swiper-button-prev{
+    opacity: 1;
+    transform: scale(1.0);
+    font-size: 12px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: #fff;
+    font-size: 10px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    font-size: 15px !important;
+    font-weight: bold;
+}
+.swiper2 .swiper-button-next,
+.swiper2 .swiper-button-prev{
+    transition: 0.8s;
+}
+
+.grid {
+    text-align: left;
+    font-size: 18px;
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.grid .gridBox{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Ability-list*/
+.Ability-list .grid .gridBox .Left{
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-todayatapple-202108?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1625788042000);
+}
+.Ability-list .grid .gridBox .Right{
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-homekit-202110_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1634069677000);
+}
+.grid .gridBox .Left{
+    padding: 30px;
+    width: 480px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 480px 500px;
+    transition: 0.3s;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+.grid .gridBox .Right{
+    width: 480px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.grid .gridBox .Right .rightTop,
+.grid .gridBox .Right .rightBottom{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 18px;   
+    padding: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 480px 250px;
+    transition: 0.3s;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+.grid .gridBox .Right .rightTop{
+    margin-bottom: 30px;
+}
+
+/*helpService-list*/
+.helpService-list .grid .gridBox .Left{
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-specialist-202108_GEO_KR?wid=480&hei=500&fmt=p-jpg&qlt=95&.v=1637189485000);
+}
+.helpService-list .grid .gridBox .Right .rightTop {
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-25-apps-202108?wid=480&hei=240&fmt=p-jpg&qlt=95&.v=1626223748000);
+}
+.helpService-list .grid .gridBox .Right .rightBottom {
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-25-genius-202108?wid=480&hei=240&fmt=p-jpg&qlt=95&.v=1626384443000);
+}
+
+/*Accessories-list*/
+.Accessories-list .swiper-slide2:nth-child(2){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-new-accessories-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1645052150646);
+}
+.Accessories-list .swiper-slide2:nth-child(9){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-allaccessories-202203?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1646846702011);
+}
+
+/*Sound-list*/
+.Sound-list .swiper-slide2:nth-child(2){
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-applemusic-202110?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1633644705000);
+}
+
+
+.grid .gridBox h3{
+    color: #1d1d1f;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.grid .gridBox h4{
+    color: #1d1d1f;
+    line-height: 1.25;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'NanumBarunGothic';
+}
+.rightTop h4{
+    padding-top: 25px;
+}
+.rightBottom h4{
+    width: 200px;
+    height: 100%;
+    float: left;
+    padding-top: 25px;
+}
+.grid .gridBox span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e6e73;
+    padding-bottom: 8px;
+    font-family: 'NEXON Lv2 Gothic';
+}
+.helpService-list .grid .gridBox .Left:hover,
+.helpService-list .grid .gridBox .Right .rightTop:hover,
+.helpService-list .grid .gridBox .Right .rightBottom:hover{
+    transform:scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0px 0px 8px #d2d2d7;
+}
+.Ability-list .grid .gridBox .Right{
+    padding: 30px;
+    width: 480px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 480px 500px;
+    transition: 0.3s;
+    display: block;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.specialApple-list{
+    height: 369px;
+}
+.swiper-slide3 > div{
+    width: 313px;
+    height: 240px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+.swiper-slide3 .svgBox{
+    height: 48px;
+    padding-bottom: 5px;
+}
+.swiper-slide3 svg {
+    height: 56px;
+    position: absolute;
+    top: 22px;
+}
+.swiper-slide3 div > span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6e6e73;
+    padding-bottom: 8px;
+    font-family: 'NEXON Lv2 Gothic';
+}
+.swiper-slide3 div h3{
+    color: #1d1d1f;
+    line-height: 1.4;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'ONE-Mobile-Regular';
+}
+.swiper-slide3 div h3 span{
+    font-size: 22px;
+    font-family: 'ONE-Mobile-Regular';
+}
+.swiper-slide3 div p{
+    color: #1d1d1f;
+    line-height: 1.4;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.swiper-slide3 div p b{
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/*Accessories-list Sound-list*/
+.Accessories-list .AC_img,
+.Sound-list .AC_img{
+    width: 100%;
+    height: auto;
+    padding:0;
+    padding-top: 41px;
+}
+.Accessories-list .AC_img img,
+.Sound-list .AC_img img{
+    display: block;
+    width: auto;
+    height: 230px;
+    margin: 0 auto;
+}
+.swiper-slide2.content{
+    width: 313px !important;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-slide2.content div{
+    width: 100%;
+    min-height: 230px;
+}
+.swiper-slide2.content div ul{
+    padding-top: 19px;
+    padding-bottom: 14px;
+    text-align: center;
+}
+.swiper-slide2.content div ul li{
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #6e6e73;
+}
+.swiper-slide2.content div ul img{
+    height: 12px;
+    width: 12px;
+}
+.Accessories-list .swiper-slide2 div span,
+.Sound-list .swiper-slide2 div span{
+    color:#bf4800;
+    font-size: 12px;
+    font-weight: 400;
+}
+.Accessories-list .swiper-slide2 div h4,
+.Sound-list .swiper-slide2 div h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+    font-family: 'NEXON Lv2 Gothic';
+    line-height: 22px;
+}
+.Accessories-list .swiper-slide2 div p,
+.Sound-list .swiper-slide2 div p{
+    margin-top: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+.Accessories-list .swiper-slide2 div p.marginTop,
+.Sound-list .swiper-slide2 div p.marginTop{
+    margin-top: 41px;
+}
+.Accessories-list .swiper-slide2 div h3,
+.Sound-list .swiper-slide2 div h3{
+    padding-top: 17px;
+}
+
+footer.storeF{
+    height: 950px;
+}
+.footer_content.storefooter .Ftxt span{
+    display: block;
+    padding-bottom: 9px;
+    color: #86868b;
+    line-height: 15px;
+}
+.footer_content.storefooter .Ftxt .pricing > span{
+    display: block;
+    color: #86868b;
+    line-height: 15px;
+    padding-bottom: 0px;
+}
+.footer_content.storefooter .Ftxt .quicklinks{
+    padding: 20px 0 40px;
+}
+.footer_content.storefooter .Ftxt .quicklinks h2{
+    font-size: 27px;
+    color: #1d1d1f;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+.footer_content.storefooter .Ftxt .quicklinks ul{
+    width: 100%;
+    height: auto;
+    padding: 30px 0 10px;
+}
+.footer_content.storefooter .Ftxt .quicklinks ul li{
+    background-color: #e8e8ed;
+    border-radius: 24px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-right: 8px;
+}
+.footer_content.storefooter .Ftxt .quicklinks ul li a{
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media all and (max-width:1376px) {
+    
+
+
+
+}
+
+@media all and (max-width:1600px){
+    .swiper-slide2:first-child{
+        opacity: 0;
+        width: 15vw !important;
+        margin-right: 2.865vw !important;
+    }
+    .swiper-slide3:first-child{
+        opacity: 0;
+        width: 15vw !important;
+        margin-right: 2.865vw !important;
+    }
+}
+
+@media all and (max-width:1024px){
+
+    .swiper-slide2:first-child{
+        width: 0 !important;
+    }
+    .swiper-slide2:nth-child(1), 
+    .swiper-slide3:nth-child(1){
+        display: none;
+    }
+    .swiper-slide2:nth-child(2), 
+    .swiper-slide3:nth-child(2){
+        margin-left: 20px;
+    }
+}
+
+
+
+
+@media all and (max-width:833px) {
+
+    #Mtop-nav{
+        height: 98px;
+    }
+    #Mtop-nav .top-comment {
+        padding: 0;
+        padding-top: 48px;
+        line-height: 37px;
+    }
+    .productList{
+        padding: 0 20px;
+        height: auto;
+    }
+    .productList .content .left{
+        width: 100%;
+        float: none;
+        padding: 60px 0 34px;
+        letter-spacing: 0;
+    }
+    .productList .content .right{
+        width: 100%;
+        float: none;
+        padding: 0px 0 9px;
+    }
+    .productList .content .right ul{
+        width: 100%;
+        height: 100%;
+    }
+    .list{
+        overflow-x: auto;
+    }
+    .productList .content .left h1{
+        font-size: 35px;
+    }
+    .productList .content .left span{
+        font-size: 35px;
+    }
+    .productList .content .left span br{
+        display: none;
+    }
+    .productList .content{
+        width: 100%;
+    }
+    .productList2 .content {
+        width: 100% !important;
+    }
+    .list h2{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    .swiper-slide2{
+        width: 300px !important;
+        height: 450px !important;
+        background-size: 300px 450px;
+    }
+    .swiper-slide2 div{
+        width: 300px;
+        height: 450px;
+    }
+    .swiper-slide2:nth-child(1){
+        background-size: 300px 450px;
+        background-position: center 10px;
+    }
+    .swiper-slide2:first-child{
+        margin-right: 20px !important;
+    }
+    .swiper-slide2 div h3{
+        font-size: 23px;
+    }
+    .swiper-slide2 div h3 span{
+        font-size: 22px;
+    }
+    .grid{
+        width: max-content;
+    }
+    .grid .gridBox .Left{
+        width: 300px;
+        height: 450px;
+        background-size: 300px 450px;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .grid .gridBox .Right{
+        width: 300px;
+        height: 450px;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .Ability-list .grid .gridBox .Right{
+        width: 300px;
+        height: 450px;
+        background-size: 300px 450px;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    .grid .gridBox .Right .rightTop,
+    .grid .gridBox .Right .rightBottom{
+        background-size: 300px 225px;
+    }
+    .list h2{
+        width: auto;
+    }
+    .grid .gridBox .Right .rightTop {
+        margin-bottom: 10px;
+    }
+    .grid .gridBox h3{
+        font-size: 21px;
+        line-height: 1.25;
+    }
+    .grid .gridBox h4{
+        font-size: 19px;
+    }
+    .grid .gridBox h4 br{display: none;}
+    .rightTop h4{padding-top: 10px;}
+    .rightBottom h4{width: 148px;}
+    .Ability-list .grid .gridBox h3 br{display: none;}
+
+    .swiper-slide3{
+        width: 300px !important;
+        height: 220px !important;
+        background-size: 300px 220px;
+    }
+    .swiper-slide3 > div{
+        width: 300px;
+        height: 220px;
+    }
+    .swiper-slide3:first-child{
+        width: 20px !important;
+        margin-right: 0px !important;
+    }
+    .swiper-slide2.content{
+        width: 300px !important;
+    }
+    .Accessories-list .AC_img img,
+    .Sound-list .AC_img img{
+        height: 200px;
+    }
+    .Accessories-list .swiper-slide2 div h4,
+    .Sound-list .swiper-slide2 div h4{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .Accessories-list .swiper-slide2 div p,
+    .Sound-list .swiper-slide2 div p{
+        font-weight: 600;
+        margin-top: 13px;
+    }
+    .Accessories-list .swiper-slide2 div p.marginTop,
+    .Sound-list .swiper-slide2 div p.marginTop{
+        margin-top: 31px;
+    }
+
+}

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="PC">
+        <header id="PCtop-nav">
+            <nav>
+                <div id="nav-pc">
+                    <ul>
+                        <li class="logo"></li>
+                        <li><a href="">스토어</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">TV 및 홈</a></li>
+                        <li><a href="">Apple 독점 제공</a></li>
+                        <li><a href="">액세서리</a></li>
+                        <li><a href="">고객지원</a></li>
+                        <li class="pc_search"><a href=""></a></li>
+                        <li class="pc_cart"><a href=""></a>
+                            <aside>
+                                <div>
+                                    <p>장바구니가 비어 있습니다.</p>
+                                    <ul>
+                                        <li><a href="/"><img src="https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/bag.svg">장바구니</a></li>
+                                        <li><a href="/"><img src="https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/savedbyyou.svg">저장된 항목</a></li>
+                                        <li><a href="/"><img src="https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/orders.svg">주문</a></li>
+                                        <li><a href="/"><img src="https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/account.svg">계정</a></li>
+                                        <li><a href="/"><img src="https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/signIn.svg">로그인</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="top-comment">
+                <span>신용카드 결제 시 최대 12개월 할부 적용 가능.</span><sup>2</sup><b>더 알아보기<i class="xi-angle-right-min"></i></b>
+            </div>
+        </header>
+    </div>
+
+    <div id="Mobile">
+        <header id="Mtop-nav">
+                <nav>
+                    <div id="nav-M">
+                        <ul>
+                            <li class="m_slide"></li>
+                            <li class="m_logo"></li>
+                            <li class="m_cart"></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="top-comment">
+                    <span>신용카드 결제 시 최대 12개월 할부 적용 가능.</span><sup>2</sup><b>더 알아보기<i class="xi-angle-right-min"></i></b>
+                </div>
+        </header>
+        <div class="slideDown-nav">
+            <span></span>
+            <div class="M_search">
+                <div class="searchBox">
+                    <button></button>
+                    <input placeholder="apple.com 검색">
+                </div>
+                <span class="searchX">취소</span>
+            </div>
+            <ul class="searchplusTXT">
+                <span>빠른 링크</span>
+                <li>Apple Store 임시 휴무 관련 자주하는 질문</li>
+                <li>Apple Store Online에서 쇼핑하기</li>
+                <li>액세서리</li>
+                <li>AirPods</li>
+                <li>AirTag</li>
+            </ul>
+            <ul class="navbasicTXT">
+                <li>스토어</li>
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>TV 및 홈</li>
+                <li>Apple 독점 제공</li>
+                <li>액세서리</li>
+                <li>고객지원</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="productList">
+        <div class="content">
+            <div class="left">
+                <h1>스토어.</h1>
+                <span>좋아하는 Apple 제품을<br>구입하는 가장 좋은 방법.</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li style="margin-bottom: 10px;">
+                        <div class="rightQimg"><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-chat-specialist-icon_AV2?wid=36&hei=36&fmt=jpeg&qlt=95&.v=1638914057000"></div>
+                        <div class="rightQbox">
+                            <span>쇼핑 지원이 필요하다면?</span>
+                            <span>스페셜리스트에게 문의하세요</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rightQimg"><img src=""></div>
+                        <div class="rightQbox">
+                            <span>Apple Store를 방문하세요</span>
+                            <span>가까운 매장 찾기<i class="xi-angle-right-min"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="productList2">
+        <div #swiperRef="" class="content swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=1645051958490">
+                    <span>Mac</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-iphone-nav-202109?wid=200&hei=130&fmt=png-alpha&.v=1630706116000">
+                    <span>iPhone</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-ipad-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783381000">
+                    <span>iPad</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-watch-nav-202203_GEO_KR?wid=200&hei=130&fmt=png-alpha&.v=1645725726804">
+                    <span>Apple Watch</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airpods-nav-202110?wid=200&hei=130&fmt=png-alpha&.v=1633718741000">
+                    <span>AirPods</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783380000">
+                    <span>AirTag</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-appletv-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783378000">
+                    <span>Apple TV</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-accessories-nav-202203?wid=400&hei=260&fmt=png-alpha&.v=1645051958489">
+                    <span style="font-size: 13px;">액세서리</span>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <section class="newProduct-list list">
+        <h2>최신 제품. <span>따끈따끈한 신제품 이야기.</span></h2>
+        <div #swiperRef="" class="swiper2 mySwiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper-slide2"></div>
+              <div class="swiper-slide swiper-slide2">
+                  <div>
+                      <span>IPHONE 13 PRO</span>
+                      <h3>iPhone 13 Pro<br><span>이게 바로 프로.</span></h3>
+                      <p>이제 알파인 그린 컬러로 만나보세요.<br><b>₩1,350,000</b>부터</p>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span class="white">IPAD AIR</span>
+                    <h3 class="white">가뿐하게. 색다르게. 강력하게.</h3>
+                    <p class="white"><b>₩779,000</b>부터</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>MAC STUDIO</span>
+                    <h3>창조의 원동력.</h3>
+                    <p><b>₩2,690,000</b>부터</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>STUDIO DISPLAY</span>
+                    <h3>대담한 비전을 위한 캔버스.</h3>
+                    <p><b>₩2,090,000</b>부터</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>IPHONE SE</span>
+                    <h3>iPhone SE<br><span>거침없는 파워. 실속 있는 선택.</span></h3>
+                    <p><b>₩590,000</b>부터</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>IPHONE 13</span>
+                    <h3>iPhone 13<br><span>일상을 위한 비상한 능력.</span></h3>
+                    <p>이제 그린 컬러로 만나보세요.<b style="margin-left: 5px;">₩950,000</b>부터</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>APPLE WATCH 밴드</span>
+                    <h3>손목에 새롭게 핀 봄.</h3>
+                    <p>다양한 스타일과 색상의 최신 밴드 쇼핑하기.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    <section class="helpService-list list">
+        <h2>도움의 손길. <span>언제든, 당신에게 맞는 방식으로.</span></h2>
+        <div class="grid">
+            <div class="gridBox">
+              <div class="Left">
+                  <h3>스페셜리스트와 함께하는 일대일 쇼핑. 온라인으로, 또는 매장에서.</h3>
+              </div>
+              <div class="Right">
+                  <div class="rightTop">
+                      <h4>무료 개인 맞춤 세션으로 새 기기와 더<br>친숙해지세요. </h4>
+                  </div>
+                  <div class="rightBottom">
+                      <h4>Genius Bar에서 <br>전문가의 서비스와 <br>지원을 받아보세요.</h4>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <section class="specialApple-list list">
+        <h2>남다른 Apple. <span>이곳에서 쇼핑해야 하는 더욱더 많은 이유.</span></h2>
+        <div #swiperRef="" class="swiper3 mySwiper3">
+            <div class="swiper-wrapper swiper-wrapper3">
+              <div class="swiper-slide swiper-slide3"></div>
+              <div class="swiper-slide swiper-slide3">
+                  <div>
+                      <div class="svgBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 56" class="as-svgicon as-svgicon-bagwithapple as-svgicon-elevated" aria-hidden="true" role="img">
+                            <g>
+                              <rect width="36" height="56" fill="none" ></rect>
+                              <path style="fill:#3f6eb8;fill-rule:nonzero;" d="M31,12H25.931a7.99,7.99,0,0,0-15.861,0H5a5,5,0,0,0-5,4.99V41.012A5,5,0,0,0,5,46H31a5,5,0,0,0,5-4.988V16.99A5,5,0,0,0,31,12ZM18,6.985A6.015,6.015,0,0,1,23.91,12H12.09A6.015,6.015,0,0,1,18,6.985ZM34,41.012a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V16.99a3,3,0,0,1,3-3H31a3,3,0,0,1,3,3ZM23.6,24.833a3.383,3.383,0,0,0-1.568,2.822A3.222,3.222,0,0,0,24,30.639a6.884,6.884,0,0,1-1.008,2.1c-.624.9-1.312,1.812-2.3,1.812-1.008,0-1.248-.593-2.416-.593-1.12,0-1.52.609-2.432.609-.928,0-1.568-.834-2.3-1.876A9.18,9.18,0,0,1,12,27.8c0-2.87,1.872-4.394,3.7-4.394.992,0,1.792.641,2.4.641.592,0,1.488-.674,2.592-.674A3.415,3.415,0,0,1,23.6,24.833Zm-5.424-1.62c-.08,0-.144-.016-.208-.016,0-.048-.016-.16-.016-.273a3.287,3.287,0,0,1,.816-2,3.186,3.186,0,0,1,2.16-1.123,1.563,1.563,0,0,1,.016.289,3.387,3.387,0,0,1-.768,2.069A2.86,2.86,0,0,1,18.176,23.214Z"></path>
+                            </g>
+                        </svg>
+                      </div>
+                      <h3>온라인으로 주문하고, <br><span style="color:#3f6eb8;">매장에서 픽업.</span></h3>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <div>
+                    <div class="svgBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 56" class="as-svgicon as-svgicon-delivery as-svgicon-elevated as-svgicon-deliverydelevated" aria-hidden="true" role="img">
+                            <g>
+                              <rect width="36" height="56" fill="none"></rect>
+                              <path style="fill:#ff0053;fill-rule:nonzero;" d="M33.905,17.063l-14-7.581a3.991,3.991,0,0,0-3.811,0l-14,7.581A4,4,0,0,0,0,20.581V35.419a4,4,0,0,0,2.095,3.518l14,7.581a3.989,3.989,0,0,0,3.811,0l14-7.581A4,4,0,0,0,36,35.419V20.581A4,4,0,0,0,33.905,17.063ZM17.048,11.241a1.993,1.993,0,0,1,1.9,0l13.8,7.47-6.383,3.645L11.943,14.005ZM18,27.133,3.253,18.711l6.629-3.589L24.355,23.5ZM3.048,37.178A2,2,0,0,1,2,35.419V20.581a1.955,1.955,0,0,1,.036-.262L17,28.865V44.733ZM34,35.419a2,2,0,0,1-1.048,1.759L19,44.733V28.865l14.964-8.545a1.955,1.955,0,0,1,.036.262Z"></path>
+                            </g>
+                          </svg>
+                      </div>
+                    <h3 class="white">무료 익일 배송 또는 표준 배송.</h3>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <div>
+                    <div class="svgBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 56" class="as-svgicon as-svgicon-personalization as-svgicon-elevated as-svgicon-personalizationelevated" aria-hidden="true" role="img">
+                            <rect width="41" height="56" fill="none"></rect>
+                            <path style="fill:#007aff;fill-rule:nonzero;" d="M20.5,10.7A17.3,17.3,0,1,1,3.2,28,17.31958,17.31958,0,0,1,20.5,10.7m0-2.2A19.5,19.5,0,1,0,40,28,19.5,19.5,0,0,0,20.5,8.5Z"></path>
+                            <path style="fill:#007aff;fill-rule:nonzero;" d="M7.042,31.44385a.82226.82226,0,0,1,1.04883-.86133,40.92776,40.92776,0,0,0,12.38867,1.91016,40.915,40.915,0,0,0,12.38672-1.91016.83014.83014,0,0,1,1.05078.86133,13.29274,13.29274,0,0,1-13.4375,11.71484A13.30611,13.30611,0,0,1,7.042,31.44385Zm24.22852,4.11523a11.177,11.177,0,0,0,1.17578-3.42285,42.82681,42.82681,0,0,1-11.9668,1.7002,42.8509,42.8509,0,0,1-11.96875-1.7002,11.25521,11.25521,0,0,0,1.17578,3.42285,35.94744,35.94744,0,0,0,21.584,0Zm-19.001-11.94726a2.62077,2.62077,0,0,1,2.37207-2.793,2.62226,2.62226,0,0,1,2.39453,2.793,2.64213,2.64213,0,0,1-2.39453,2.81347A2.64088,2.64088,0,0,1,12.26953,23.61182Zm11.65332,0a2.62314,2.62314,0,0,1,2.41406-2.793,2.62082,2.62082,0,0,1,2.373,2.793,2.64092,2.64092,0,0,1-2.373,2.81347A2.64279,2.64279,0,0,1,23.92285,23.61182Z"></path>
+                        </svg>
+                      </div>
+                    <h3>자신만의 것이라는 증표.<br><span style="color:#007aff;">무료로 조합해서 새기는<br>이모티콘, 이름, 숫자.</span></h3>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <div>
+                    <div class="svgBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 56" class="as-svgicon as-svgicon-applelogo as-svgicon-elevated" aria-hidden="true" role="img">
+                            <g>
+                            <rect width="29" height="56" fill="none"></rect>
+                            <defs id="defs2334">
+                                <linearGradient id="linearGradient2904">
+                                <stop style="stop-color:#f8ab5e;stop-opacity:1" offset="0" id="stop2900"></stop>
+                                <stop style="stop-color:#f3695f;stop-opacity:1" offset="1" id="stop2902"></stop>
+                                </linearGradient>
+                                <linearGradient xlink:href="#linearGradient2904" id="linearGradient2906" x1="0.16650136" y1="23.976196" x2="15.151624" y2="23.976196" gradientUnits="userSpaceOnUse"></linearGradient>
+                            </defs>
+                            <g>
+                                <path id="path2324" d="m 14.9,14.43 a 2.581,2.581 0 0 1 -0.472,-0.045 3.083,3.083 0 0 1 -0.067,-0.629 7.531,7.531 0 0 1 1.909,-4.694 7.76,7.76 0 0 1 5.1,-2.628 3.329,3.329 0 0 1 0.067,0.7 7.745,7.745 0 0 1 -1.837,4.825 6.728,6.728 0 0 1 -4.7,2.471 z m 12.807,3.818 a 7.851,7.851 0 0 0 -3.751,6.6 7.64,7.64 0 0 0 4.649,7.008 18.257,18.257 0 0 1 -2.381,4.919 c -1.482,2.134 -3.032,4.268 -5.391,4.268 -2.359,0 -2.965,-1.37 -5.683,-1.37 -2.65,0 -3.594,1.415 -5.75,1.415 -2.156,0 -3.661,-1.977 -5.391,-4.4 A 21.279,21.279 0 0 1 0.395,25.211 c 0,-6.738 4.38,-10.31 8.692,-10.31 2.291,0 4.2,1.5 5.638,1.5 1.37,0 3.5,-1.595 6.109,-1.595 a 8.172,8.172 0 0 1 6.873,3.442 z" style="fill-opacity:1;fill:url(#linearGradient2906)"></path>    
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Mac을 <span style="background-image: linear-gradient(to right,#f8ab5e 0,#f36961 20%,#a176c8 40%,#759beb 60%,#65beb3 80%,#70db96 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">맞춤 구성</span>하고, Apple Watch를 당신만의 스타일로.</h3>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <div>
+                    <div class="svgBox">
+                        <svg viewBox="0 0 43 56" xmlns="http://www.w3.org/2000/svg" class="as-svgicon as-svgicon-financing as-svgicon-elevated as-svgicon-financingelevated" aria-hidden="true" role="img">
+                            <path d="m0 0h43v56h-43z" fill="none"></path>
+                            <path style="fill:#ac39ff;fill-rule:nonzero;" d="m38.5 27a.99974.99974 0 0 0 -1 1v11a5.00588 5.00588 0 0 1 -5 5h-22a5.00588 5.00588 0 0 1 -5-5v-3.83594l1.543 1.543a.99989.99989 0 1 0 1.414-1.41406l-3.25-3.25a.99962.99962 0 0 0 -1.41406 0l-3.25 3.25a.99989.99989 0 1 0 1.41406 1.414l1.543-1.543v3.836a7.00818 7.00818 0 0 0 7 7h22a7.00818 7.00818 0 0 0 7-7v-11a.99974.99974 0 0 0 -1-1z"></path>
+                            <path style="fill:#ac39ff;fill-rule:nonzero;" d="m28.17188 32.71533a.31074.31074 0 0 0 -.35157.35156q0 .334.35157.334h2.62792a.29915.29915 0 0 0 .34278-.334.30692.30692 0 0 0 -.34278-.35156z"></path>
+                            <path style="fill:#ac39ff;fill-rule:nonzero;" d="m30.60156 21.32031a1.92007 1.92007 0 0 0 -1.40136-.47021h-15.75a1.94085 1.94085 0 0 0 -1.376.47021 1.81128 1.81128 0 0 0 -.50488 1.39307v10.43262h-.92481a.95033.95033 0 0 0 -.70312.29443 1.00858 1.00858 0 0 0 0 1.41553.9536.9536 0 0 0 .70312.29394h20.74416a1.96828 1.96828 0 0 0 1.415-.51855 1.78331 1.78331 0 0 0 .54492-1.35352v-8.376a1.78328 1.78328 0 0 0 -.54492-1.35352 1.96828 1.96828 0 0 0 -1.415-.51855h-.30762v-.31641a1.8689 1.8689 0 0 0 -.47949-1.39304zm-4.99609 3.58155v8.24414h-12.62109v-10.03711a.74576.74576 0 0 1 .84374-.84375h14.99415a.85949.85949 0 0 1 .63281.21093.827.827 0 0 1 .19971.55372h-2.08936a1.96828 1.96828 0 0 0 -1.415.51855 1.78328 1.78328 0 0 0 -.54496 1.35352zm5.53711-.334v-.35156h.09668a.94481.94481 0 0 1 .67676.23291.83527.83527 0 0 1 .24609.63721v8.00683a.83528.83528 0 0 1 -.24609.63721.94481.94481 0 0 1 -.67676.23291h-3.51563a.95761.95761 0 0 1 -.68554-.23291.83525.83525 0 0 1 -.2461-.63721v-8.00682a.83524.83524 0 0 1 .2461-.63721.95761.95761 0 0 1 .68554-.23291h.09668v.35156a.52959.52959 0 0 0 .14063.37793.48342.48342 0 0 0 .36914.14941h2.30273a.48342.48342 0 0 0 .36914-.14941.52959.52959 0 0 0 .14063-.37793z"></path>
+                            <path style="fill:#ac39ff;fill-rule:nonzero;" d="m42.457 19.293a.99962.99962 0 0 0 -1.41406 0l-1.543 1.543v-3.836a7.00818 7.00818 0 0 0 -7-7h-22a7.00818 7.00818 0 0 0 -7 7v11a1 1 0 0 0 2 0v-11a5.00588 5.00588 0 0 1 5-5h22a5.00588 5.00588 0 0 1 5 5v3.83594l-1.543-1.543a.99989.99989 0 0 0 -1.41394 1.41406l3.25 3.25a.99963.99963 0 0 0 1.41406 0l3.25-3.25a.99962.99962 0 0 0 -.00006-1.414z"></path>
+                        </svg>
+                    </div>
+                    <h3><span>쓰던 기기를 보상 판매하고</span> 새 기기를 더 저렴하게.<sup>1</sup></h3>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <div>
+                    <div class="svgBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 56" class="as-svgicon as-svgicon-financing as-svgicon-elevated as-svgicon-financingelevated" aria-hidden="true" role="img">
+                            <g>
+                              <rect width="42" height="56" fill="none"></rect>
+                              <path style="fill:#68cc45;fill-rule:nonzero;" d="M37,12H5a5.006,5.006,0,0,0-5,5V39a5.006,5.006,0,0,0,5,5H37a5.006,5.006,0,0,0,5-5V17A5.006,5.006,0,0,0,37,12ZM5,14H37a3,3,0,0,1,3,3v3H2V17A3,3,0,0,1,5,14ZM37,42H5a3,3,0,0,1-3-3V24H40V39A3,3,0,0,1,37,42ZM6,33.5v-4A1.5,1.5,0,0,1,7.5,28h6A1.5,1.5,0,0,1,15,29.5v4A1.5,1.5,0,0,1,13.5,35h-6A1.5,1.5,0,0,1,6,33.5Z"></path>
+                            </g>
+                          </svg>
+                    </div>
+                    <h3>기분 좋은 결제 옵션.<sup>2</sup></h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    <section class="Accessories-list list">
+        <h2>액세서리. <span>즐겨 사용하는 기기들과 완벽하게 페어링되는 여러 가지 필수품.</span></h2>
+        <div #swiperRef="" class="swiper2 mySwiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper-slide2"></div>
+              <div class="swiper-slide swiper-slide2">
+                  <div>
+                      <h3>새로움을 입다. </h3>
+                      <p>전에 없던 색상으로 찾아온 수많은 액세서리.</p>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN683?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645997365583">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN663_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602096"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN653_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232601954"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN673_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232601875"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN683_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602059"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM2F3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023671000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM2H3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023672000"></li>
+                        <li>+</li>
+                    </ul>
+                    <span>New</span>
+                    <h4>MagSafe형 iPhone 13 Pro 실리콘 케이스 - 넥타린</h4>
+                    <p>₩59,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN6G3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645509710532">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN6G3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645158888588"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN6F3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645158888597"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN6E3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645158888577"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN6H3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645158889005"></li>
+                    </ul>
+                    <span>New</span>
+                    <h4>iPhone SE 실리콘 케이스 - 초크 핑크</h4>
+                    <p class="marginTop">₩45,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN613?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645847133062">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN623_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602007"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN613_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232601832"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN633_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602081"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN643_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602095"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM263_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023683000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM283_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023685000"></li>
+                        <li>+</li>
+                    </ul>
+                    <span>New</span>
+                    <h4>MagSafe형 iPhone 13 실리콘 케이스 - 블루 포그</h4>
+                    <p>₩59,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0W3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1629865215000">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0T3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023655000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0Y3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023658000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0Q3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023657000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0X3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023653000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0W3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023656000"></li>
+                    </ul>
+                    <span>New</span>
+                    <h4>MagSafe형 iPhone 가죽 카드지갑 - 위스테리아</h4>
+                    <p>₩75,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN1L3ref?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1645079879837">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN0F3ref_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645035459376"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN023ref_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645035460405"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ML4Q3ref_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1629943585000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN0X3ref_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645035459378"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ML563ref_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1629943587000"></li>
+                    </ul>
+                    <span>New</span>
+                    <h4>45mm 플라밍고 브레이드 솔로 루프 - 사이즈 6</h4>
+                    <p>₩125,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM013?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1624640873000">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX4A2_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1617325223000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM043_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1624640863000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM013_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1624644587000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM023_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1624640862000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK0V3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1617325202000"></li>
+                    </ul>
+                    <span>New</span>
+                    <h4>AirTag 가죽 루프 - 포레스트 그린</h4>
+                    <p class="marginTop">₩49,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <h3>모든 액세서리를 살펴보세요. </h3>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    <section class="Sound-list list">
+        <h2>생생하게 들리는 차이.<span>풍부한 고품질 사운드를 원한다면 필연적인 선택.</span></h2>
+        <div #swiperRef="" class="swiper2 mySwiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper-slide2"></div>
+              <div class="swiper-slide swiper-slide2">
+                  <div>
+                      <h3>Apple Music 6개월 무료 이용 혜택. </h3>
+                      <p>AirPods 또는 특정 Beats 제품 구입 시 포함됩니다.*</p>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MME73?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632861342000">
+                    </div>
+                    <ul style="opacity: 0;">
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2F3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663467000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2G3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663475000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2H3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663485000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2J3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663495000"></li>
+                        <li>+</li>
+                    </ul>
+                    <span>무료 각인</span>
+                    <h4>AirPods(3세대)</h4>
+                    <p class="marginTop">₩249,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2J3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1634663503000">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2F3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663467000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2G3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663475000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2H3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663485000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2J3_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1634663495000"></li>
+                    </ul>
+                    <span style="opacity: 0;">New</span>
+                    <h4>Beats Fit Pro 진정한 무선 이어버드 — 세이지 그레이</h4>
+                    <p>₩255,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MWP22?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1591634795000">
+                    </div>
+                    <ul style="opacity: 0;">
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN623_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602007"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN613_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232601832"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN633_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602081"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MN643_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1645232602095"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM263_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023683000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM283_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1630023685000"></li>
+                        <li>+</li>
+                    </ul>
+                    <span>무료 각인</span>
+                    <h4>AirPods Pro</h4>
+                    <p class="marginTop">₩329,000</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2 content">
+                <div>
+                    <div class="AC_img">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-silver-202011?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1604021221000">
+                    </div>
+                    <ul>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-spacegray-202011_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1604622935000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-silver-202011_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1603846873000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-green-202011_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1603846873000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-pink-202011_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1603846873000"></li>
+                        <li><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-skyblue-202011_SW_COLOR?wid=32&hei=32&fmt=jpeg&qlt=95&.v=1603846875000"></li>
+                    </ul>
+                    <span>무료 각인</span>
+                    <h4>AirPods Max - 실버</h4>
+                    <p class="marginTop">₩719,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    <section class="Ability-list list">
+        <h2>Apple 제품으로 더 커지는 능력. <span>쓸수록 커지는 즐거움은 지금부터.</span></h2>
+        <div class="grid">
+            <div class="gridBox">
+              <div class="Left">
+                  <span>보고 배우기</span>
+                  <h3>Today at Apple 가상 세션에<br> 참가하세요.</h3>
+              </div>
+              <div class="Right">
+                <span>홈</span>
+                <h3>앱 하나로 집안 전체를 관리하는<br> 방법을 알아보세요.</h3>
+              </div>
+          </div>
+    </section>
+
+    <section class="specialSale-list list">
+        <h2>특별 할인. <span>특별한 가격 혜택을 누리세요.</span></h2>
+        <div #swiperRef="" class="swiper2 mySwiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper-slide2"></div>
+              <div class="swiper-slide swiper-slide2">
+                  <div>
+                      <span>교육</span>
+                      <h3 style="white-space: break-spaces;">교육 할인가로 Mac 또는 iPad를 더 저렴하게.<sup style="font-size: 17px;">3</sup></h3>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span class="white">비즈니스</span>
+                    <h3 class="white" style="white-space: break-spaces;">대기업부터 중소기업까지 Apple이 함께합니다.<sup style="font-size: 17px;">3</sup></h3>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                <div>
+                    <span>인증 리퍼비쉬 제품</span>
+                    <h3 style="white-space: break-spaces;">1년 보증이 제공되는 새것 같은 제품을 쇼핑하세요.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+
+    <footer class="PCfooter storeF">
+        <div class="footer_content storefooter">
+            <div class="Ftxt">
+                <div class="quicklinks">
+                    <h2>빠른 링크</h2>
+                    <ul>
+                        <li><a>주문 상태</a></li>
+                        <li><a>쇼핑 도움말</a></li>
+                        <li><a>반품</a></li>
+                    </ul>
+                </div>
+                <div class="pricing">
+                    <span>사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호</span>
+                    <span>대표이사 : PETER DENWOOD | 주소 : 서울 특별시 강남구 영동대로 517</span>
+                    <span>대표전화 : 080-330-8877 | 팩스 : 02-6928-0000</span>
+                    <span style="padding-bottom: 9px;">* 본 프로모션은 한정된 기간 동안 신규 가입자에게만 적용되며, 신규 가입자는 적용 대상 기기를 iOS 15 또는 iPadOS 15 이후 버전이 설치된 Apple 기기에 연결해야 합니다. 무료 체험 혜택은 적용 대상 기기 페어링 이후 3개월 안에 신청할 수 있습니다. 멤버십은 거주 지역의 요금에 따라 매월 자동으로 갱신되며, 해지 시 종료됩니다. 적용 대상 기기를 이미 소유하고 있는 경우 제품을 구입하지 않아도 혜택을 받을 수 있습니다. 서비스 이용 가능 여부는 국가에 따라 다릅니다.
+                     특정 제한 사항 및 기타 <a>약관</a>이 적용됩니다.</span>
+                </div>
+                <span>
+                    1. 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매되는 제품의 상태, 연도, 구성에 따라 달라집니다. 크레딧으로 보상 판매를 받으려면 최소 19세 이상이어야 합니다. 일부 기기는 보상 판매 대상이 아닙니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 Mac 
+                    <a>보상 판매 파트너</a>
+                    와 Apple의 iPhone, iPad, Apple Watch 
+                    <a>보상 판매 파트너</a>
+                    에서 확인하실 수 있습니다. 특정 제한 사항이 적용될 수 있습니다. 예상 지불 금액 산정은 사용자가 제공한 설명과 일치하는 수령 기기를 기준으로 합니다. Apple은 어떤 기기든 수령을 거부하거나, 그 수량을 제한할 권리를 보유합니다. Apple Store Gift Card의 재고 상황은 시기별로 다를 수 있습니다. 새 Apple 기기 구매 시, 현재 소유한 기기의 가치만큼 할인을 받을 수도 있습니다. 일부 매장에서는 본 프로그램을 이용할 수 없습니다. 일부 매장에서는 추가 요구 사항이 있을 수 있습니다.
+                </span>
+                <span>
+                    2. <strong>이용 약관</strong> 위 할부 서비스는 Apple Online Store, Apple 전화 판매 및 Apple 리테일 매장에서 구입하는 경우에만 이용할 수 있습니다.<br>
+                    할부 서비스는 신용 카드 발급사인 신한, BC, KB, NH, 롯데, 삼성, 현대, 하나, KEB 및 시티은행에서 제공합니다. 모든 할부 구입은 신용 카드 발급사의 승인을 받아야 합니다. 신용 카드 발급사에서 할부 구입을 승인해 주지 않는 경우에도 Apple 직원에게 승인 거부 사유가 전달되지 않습니다. 할부 구입에 대한 승인 결과는 신용 카드 발급사에 문의하십시오. 할부 조건, 수수료, 청구액 등은 은행 웹사이트를 참고하십시오. 청구액은 카드 명세서에 표시됩니다. 할부 서비스를 이용하려면 한국 거주자여야 합니다.<br>
+                    할부 서비스를 이용하려면 구입 시 현지 발급 신용 카드 또는 현지 발급 제휴 카드(Visa, Mastercard, AMEX, China Union Pay)를 사용해야 합니다. 해외 신용 카드(한국 외 다른 국가 또는 지역에서 발급 받은 신용 카드), 직불/체크 카드 및 현지 발급/제휴 법인 카드는 할부 서비스를 이용할 수 없습니다. 할부는 광고 가격 또는 정찰 가격을 기준으로 합니다. 모든 주문 제품은 무료 배송됩니다.<br>
+                    이 정보는 2021년 03월 16일 기준 최신 정보입니다.
+                </span>
+                <span>
+                    3. 특별 할인가는 이용 자격을 갖춘 고객에게 적용됩니다. 특별 할인 혜택을 받는 방법에 관한 자세한 내용은 매장 내 Apple 스페셜리스트에게 문의하거나 080-330-8877에 전화로 문의하시기 바랍니다.
+                </span>
+            </div>
+            <nav class="footernav">
+                <div>
+                    <ul>
+                        <li class="f_B">쇼핑 및 알아보기</li>
+                        <li>스토어</li>
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>AirPods</li>
+                        <li>TV 및 홈</li>
+                        <li>iPod touch</li>
+                        <li>AirTag</li>
+                        <li>액세서리</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="f_B">서비스</li>
+                        <li>Apple Music</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Arcade</li>
+                        <li>iCloud</li>
+                        <li>Apple Books</li>
+                        <li>Apple Podcast</li>
+                        <li>App Store</li>
+                    </ul>
+                    <ul style="margin-top: 15px;">
+                        <li class="f_B">계정</li>
+                        <li>Apple ID 관리</li>
+                        <li>Apple Store 계정</li>
+                        <li>iCloud.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="f_B">Apple Store</li>
+                        <li>매장 찾기</li>
+                        <li>Genius Bar</li>
+                        <li>Today at Apple</li>
+                        <li>Apple 캠프</li>
+                        <li>Apple Store 앱</li>
+                        <li>리퍼 및 특가 제품</li>
+                        <li>금융 혜택</li>
+                        <li>Apple Trade In</li>
+                        <li>주문 상태</li>
+                        <li>쇼핑 도움말</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="f_B">비즈니스</li>
+                        <li>Apple과 비즈니스</li>
+                        <li>비즈니스를 위한 제품 쇼핑하기</li>
+                    </ul>
+                    <ul style="margin-top: 15px;">
+                        <li class="f_B">교육</li>
+                        <li>Apple과 교육</li>
+                        <li>초중고용 제품 쇼핑하기</li>
+                        <li>대학 생활을 위한 제품 쇼핑하기</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="f_B">Apple의 가치관</li>
+                        <li>손쉬운 사용</li>
+                        <li>환경</li>
+                        <li>개인정보 보호</li>
+                        <li>협력업체에 대한 책임</li>
+                    </ul>
+                    <ul style="margin-top: 15px;">
+                        <li class="f_B">Apple 정보</li>
+                        <li>Newsroom</li>
+                        <li>Apple 리더십</li>
+                        <li>채용 안내</li>
+                        <li>윤리 및 규정 준수</li>
+                        <li>이벤트</li>
+                        <li>일자리 창출</li>
+                        <li>Apple 연락처</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="Ftxt2">
+                <span>
+                    다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나,<a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+                </span>
+            </div>
+            <div class="f_legal">
+                <span>Copyright © 2022 Apple Inc. 모든 권리 보유.</span>
+                <ul>
+                    <li>개인정보 처리방침</li>
+                    <li>웹 사이트 이용 약관</li>
+                    <li>판매 및 환불</li>
+                    <li>법적 고지</li>
+                    <li>사이트 맵</li>
+                </ul>
+                <span style="float: right; ">대한민국</span>
+            </div>
+        </div>
+    </footer>
+    <footer class="Mobilefooter">
+        <div class="Mfooter_content">
+            <div class="Ftxt">
+                <span>
+                    1. Apple TV+는 무료 체험 기간 종료 후 월 6,500원에 이용 가능합니다. 해지는 무료 체험 기간 중에도 가능합니다. 가족 공유 그룹당 하나의 멤버십 이용이 가능합니다. 무료 체험 혜택은 2021년 11월 4일부터 대상 기기 활성화 이후 3개월 안에 신청 가능합니다. 멤버십은 매월 자동 갱신되며, 해지 시 종료됩니다. 제한 사항 및 기타 
+                    <a href="">약관</a>이 적용됩니다.
+                </span>
+            </div>
+            <nav class="footernav">
+                <div>
+                    <span>쇼핑 및 알아보기<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>스토어</li>
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>iPhone</li>
+                        <li>Watch</li>
+                        <li>AirPods</li>
+                        <li>TV 및 홈</li>
+                        <li>iPod touch</li>
+                        <li>AirTag</li>
+                        <li>액세서리</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>서비스<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>Apple Music</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Arcade</li>
+                        <li>iCloud</li>
+                        <li>Apple Books</li>
+                        <li>Apple Podcast</li>
+                        <li>App Store</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>계정<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>Apple ID 관리</li>
+                        <li>Apple Store 계정</li>
+                        <li>iCloud.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Apple Store<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>매장 찾기</li>
+                        <li>Genius Bar</li>
+                        <li>Today at Apple</li>
+                        <li>Apple 캠프</li>
+                        <li>Apple Store 앱</li>
+                        <li>리퍼 및 특가 제품</li>
+                        <li>금융 혜택</li>
+                        <li>Apple Trade In</li>
+                        <li>주문 상태</li>
+                        <li>쇼핑 도움말</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>비즈니스<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>Apple과 비즈니스</li>
+                        <li>비즈니스를 위한 제품 쇼핑하기</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>교육<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>Apple과 교육</li>
+                        <li>초중고용 제품 쇼핑하기</li>
+                        <li>대학 생활을 위한 제품 쇼핑하기</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Apple의 가치관<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>손쉬운 사용</li>
+                        <li>환경</li>
+                        <li>개인정보 보호</li>
+                        <li>협력업체에 대한 책임</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>Apple의 정보<i class="xi-plus-min"></i></span>
+                    <ul>
+                        <li>Newsroom</li>
+                        <li>Apple 리더십</li>
+                        <li>채용 안내</li>
+                        <li>윤리 및 규정 준수</li>
+                        <li>이벤트</li>
+                        <li>일자리 창출</li>
+                        <li>Apple 연락처</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="Ftxt2">
+                <span>
+                    다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나,<a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+                </span>
+            </div>
+            <div class="f_legal">
+                <span>대한민국</span>
+                <span>Copyright © 2022 Apple Inc. 모든 권리 보유.</span>
+                <ul>
+                    <li>개인정보 처리방침</li>
+                    <li>웹 사이트 이용 약관</li>
+                    <li>판매 및 환불</li>
+                    <li>법적 고지</li>
+                    <li>사이트 맵</li>
+                </ul>
+            </div>
+            <div class="f_info">
+                <span>사업자등록번호 : 120-81-84429 |</span><br>
+                <span>통신판매업신고번호 : 제 2011-서울강남-00810호 |</span><br>
+                <span>대표이사 : PETER DENWOOD |</span>
+                <span>주소 : 서울 특별시 강남구 영동대로 517 |</span><br>
+                <span>대표전화 : 02-6712-6700 |</span>
+                <span>팩스 : 02-6928-0000</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+<script src="store.js"></script>
+<script src="path/to/swiper.min.js"></script>
+</html>

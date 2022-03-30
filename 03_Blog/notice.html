@@ -1,0 +1,370 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/notice.css"/>
+    <link rel="stylesheet" href="./css/bored.css"/>
+    <link rel="stylesheet" href="./css/album01.css"/>
+    <link rel="stylesheet" href="./css/date.css"/>
+    <link rel="stylesheet" href="./css/guestbook.css"/>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="./lib/scene.js"></script>
+    <title>notice</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo"><img src="./img/logo.png"></div>
+            <!-- <p>LOGIN</p> -->
+        </header>
+        <div class="slideSection">
+            <img src="./img/mainImg.png">
+        </div>
+        <section>
+            <div class="sideSection">
+                <div class="profileSection">
+                    <span class="profileImg"></span>
+                    <h3>LIM BO RA</h3>
+                    <div class="instaSection">
+                        <img src="./img/insta.png">
+                        <p><a href="https://www.instagram.com/l.pp__x/" target="_blank">l.pp__x</a></p>
+                    </div>
+                    <p>" It's where you write down the <br>daily life of Lim Bora. "</p>
+                </div>
+                <div class="categorySection">
+                    <h4>ALL</h4>
+                    <ul>
+                        <li class="categoryliOn" onclick="noticeOn()">· BOARD</li>
+                        <li onclick="boredOn()">· GUESTBOOK</li>
+                        <li onclick="album01On()">· GELLERY</li>
+                        <li onclick="album02On()">· CALENDAR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="noticeSection">
+                <div id="notice" class="notice noticeCM categoryOn">
+                    <div id="titleBox">
+                        <h4>제목</h4>
+                        <input type="text" placeholder="제목을 입력하세요.">
+                        <h4>내용</h4>
+                    </div>
+                    <div id="txtBox">
+                        <div class="txtOptionButton">
+                            <ul>
+                                <li class="option01">
+                                    <ul>
+                                        <li class="TXTbtn bold"><input id="bold" onclick="boldBtn()" type="image" src="./icon/iconmonstr-text-4-240.png"></li>
+                                        <li class="TXTbtn inclination"><input id="inclination" onclick="inclinationBtn()" type="image" src="./icon/iconmonstr-text-5-240.png"></li>
+                                        <li class="TXTbtn underline"><input id="underline" onclick="underlineBtn()" type="image" src="./icon/iconmonstr-text-6-240.png"></li>
+                                        <li class="TXTbtn linethrough"><input id="linethrough" onclick="linethroughBtn()" type="image" src="./icon/iconmonstr-text-7-240.png"></li>
+                                        <li class="TXTbtn sub"><input id="sub" onclick="subBtn()" type="image" src="./icon/iconmonstr-text-9-240.png"></li>
+                                        <li class="TXTbtn super"><input id="super" onclick="superBtn()" type="image" src="./icon/iconmonstr-text-8-240.png"></li>
+                                        <li class="TXTbtn trans"><input id="trans" onclick="transOpen()" type="image" src="./icon/icons8Text60.png">
+                                            <div class="textTrans boxCm">
+                                                <ul>
+                                                    <li onclick="textTransform(1)"><img src="./icon/icons8Text60.png"></li>
+                                                    <li onclick="textTransform(2)"><img src="./icon/icons8-capital-60.png"></li>
+                                                    <li onclick="textTransform(3)"><img src="./icon/icons8-small-2-60.png"></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="TXTbtn fontsize"><input id="fontsize" onclick="fontsizeOpen()" type="image" src="./icon/iconmonstr-text-1-240.png">
+                                            <div class="fontsizeBox boxCm">
+                                                <ul>
+                                                    <input type="image" src="./icon/font01.png" onclick="fontSizeSelect(11)">
+                                                    <input type="image" src="./icon/font02.png" onclick="fontSizeSelect(13)">
+                                                    <input type="image" src="./icon/font03.png" onclick="fontSizeSelect(15)">
+                                                    <input type="image" src="./icon/font04.png" onclick="fontSizeSelect(19)">
+                                                    <input type="image" src="./icon/font05.png" onclick="fontSizeSelect(24)">
+                                                    <input type="image" src="./icon/font06.png" onclick="fontSizeSelect(28)">
+                                                    <input type="image" src="./icon/font07.png" onclick="fontSizeSelect(30)">
+                                                    <input type="image" src="./icon/font08.png" onclick="fontSizeSelect(34)">
+                                                    <input type="image" src="./icon/font09.png" onclick="fontSizeSelect(38)">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="TXTbtn front"><input id="front" onclick="frontOpen()" type="image" src="./icon/iconmonstr-text-12-240.png">
+                                            <div class="frontBox boxCm">
+                                                <ul>
+                                                    <li onclick="front(1)"><img src="./icon/iconmonstr-text-12-240.png"></li>
+                                                    <li onclick="front(2)"><img src="./icon/iconmonstr-text-13-240.png"></li>
+                                                    <li onclick="front(3)"><img src="./icon/iconmonstr-text-14-240.png"></li>
+                                                    <li onclick="front(4)"><img src="./icon/iconmonstr-text-15-240.png"></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+        
+                                        <li class="TXTbtn titleNumber"><input id="titleNumber" type="image" src="./icon/iconmonstr-text-21-240.png" onclick="titleNumberOpen()">
+                                            <div class="titleNumberBox boxCm">
+                                                <ul>
+                                                    <li onclick="titleNumber(1)"><img src="./icon/iconmonstr-text-21-240.png"></li>
+                                                    <li onclick="titleNumber(2)"><img src="./icon/iconmonstr-text-20-240.png"></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+        
+                                        <li class="TXTbtn titleStyle"><input id="titleStyle" type="image" src="./icon/fontnormal.png" onclick="titleStyleOpen()">
+                                            <div class="titleStyleBox boxCm">
+                                                <ul>
+                                                    <input type="image" src="./icon/fontnormal.png" onclick="titleStyle(1)">
+                                                    <input type="image" src="./icon/fontTitle.png" onclick="titleStyle(2)">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="TXTbtn upload"><input type="image" onclick="uploadImg()" src="./icon/iconmonstr-picture-1-240.png">
+                                            <div>
+                                                <input type="file" name="file" class="UploadBox" id="imageFileOpenInput" onchange="uploadImgPreview()" accept="image/*">   
+                                            </div>
+                                        </li>
+                                        <li class="TXTbtn video"><input type="image" onclick="uploadVideo()" src="./icon/iconmonstr-video-camera-1-240.png">
+                                            <div>
+                                                <input type="file" name="file" class="UploadBox" id="videoFileOpenInput" onchange="uploadVideoPreview()" accept="video/*">
+                                            </div>
+                                        </li>
+                                        <li class="TXTbtn"><input id="rotateRight" onclick="rotateRightBtn()" type="image" src="./icon/rotate01.png"></li>
+                                        <li class="TXTbtn"><input id="rotateLeft" onclick="rotateLeftBtn()" type="image" src="./icon/rotate02.png"></li>
+                                        <!-- <li class="TXTbtn enlargement"><input id="enlargement" onclick="enlargeOpen()"type="image" src="./icon/icons8-compress-60.png">
+                                            <div class="enlargementBox boxCm">
+                                                <ul>
+                                                    <li onclick="enlarge(1)"><img src="./icon/icons8-enlarge-60.png"></li>
+                                                    <li onclick="enlarge(2)"><img src="./icon/icons8-compress-60.png"></li>
+                                                </ul>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="txtSection">
+                                <en-note id="txt" class="peso ProseMirror editable" contenteditable="true" enterkeyhint="enter" inputmode="text" style="padding: 12px 40px 0px;">
+                                    <div class="en-media-image" draggable="true" contenteditable="false">
+                                        <div class="_1Q9pa"><div class="_2KuzT"></div>
+                                        <div class="_27gQd">
+                                            <div class="_27BqJ"></div>
+                                        </div>
+                                        <div class="_3RY-s"></div>
+                                    </div>
+                                </div>
+                                <div class="para"><br></div>
+                                <div class="para"><br></div>
+                                <div class="para"><br></div>
+                            </en-note>
+                        </div>
+                    </div>
+                    <div class="OK">
+                        <input class="OKbtn" type="submit" value="글쓰기"></input>
+                    </div>
+                </div>
+                <div id="bored" class="bored noticeCM" style="margin: 0; padding: 0;">
+                    <div class="boredSection">
+                        <div class="boredTxtBox">
+                            <form id="reset">
+                                <input id='print' onchange="printResult()" autocomplete="off" placeholder="Please write down the guest book.">
+                            </form>
+                            <button onmousedown="inset(0)" onmouseup="outset(0)">click</button>
+                        </div>
+                        <div class="resultBox"></div>
+                    </div>
+                </div> 
+                <div id="album01" class="album01 noticeCM">
+                    <div class="gallerySection">
+                        <ul>
+                            <li class="gallery gallery01" onmousedown="inset(0)" onmouseup="outset(0)" style="text-align: center; line-height: 15;">
+                                <img src="./icon/icons8-plus-128.png">
+                            </li>
+                            <li class="gallery gallery02 galleryCM" onmousedown="inset(1)" onmouseup="outset(1)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                    <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>   
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(0)">
+                                    <input type="hidden" name = "target_url" class="target_input">
+                                </form>
+                            </li>
+                            <li class="gallery gallery03 galleryCM" onmousedown="inset(2)" onmouseup="outset(2)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i> 
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(1)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>  
+                            </li>
+                            <li class="gallery gallery04 galleryCM" onmousedown="inset(3)" onmouseup="outset(3)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(2)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>   
+                            </li>
+                            <li class="gallery gallery05 galleryCM" onmousedown="inset(4)" onmouseup="outset(4)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(3)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>
+                            </li>
+                            <li class="gallery gallery06 galleryCM" onmousedown="inset(5)" onmouseup="outset(5)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(4)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>
+                            </li>
+                            <li class="gallery gallery07 galleryCM" onmousedown="inset(6)" onmouseup="outset(6)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(5)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>
+                            </li>
+                            <li class="gallery gallery08 galleryCM" onmousedown="inset(7)" onmouseup="outset(7)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(6)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>
+                            </li>
+                            <li class="gallery gallery09 galleryCM" onmousedown="inset(8)" onmouseup="outset(8)">
+                                <span class="ex_file"><img class="target_img" src="./icon/icons8-plus-128.png"></span>
+                                <button><span class="hide">더보기</span></button>
+                                <div class="galleryTxt"></div>
+                                <div class="Gbox">
+                                    <textarea class="galleryTxtInput" wrap="physical" rows="3" cols="8"></textarea>
+                                    <i class="xi-plus"></i>
+                                </div>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="file" name="file" style="display:none;" onchange="uploadImgGallery(7)">
+                                    <input type="hidden" name = "target_url"class="target_input">
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div id="album02" class="album02 noticeCM">
+                    <div class="calendarSection calendar01">
+                        <div class="calendarIMG">
+                            <div>
+                                <span class="ex_file"><img class="Calendar_img" src="./img/imgplus.png"></span>
+                                <form name="signform" method="POST" ENCTYPE="multipart/form-data" action="./design_update.htm">
+                                    <input type="file" class="Cal_Img" name="file" style="display:none;" onchange="uploadImgCalendar()">
+                                    <input type="hidden" name = "target_url"class="Calendar_input">
+                                </form>
+                            </div>
+                            <div class="palet">
+                                <ul>
+                                    <li onclick="yellow()"></li>
+                                    <li onclick="pink()"></li>
+                                    <li onclick="orange()"></li>
+                                    <li onclick="green()"></li>
+                                    <li onclick="blue()"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calendarBoxAll">
+                            <div class="calendarMonthSection">
+                                <div class="calendarMonth calendarMonth1"></div>
+                                <div class="calendarYear calendarYear1"></div>
+                                <div class="calendarWeek">
+                                    <ul>
+                                        <li>SUN</li>
+                                        <li>MON</li>
+                                        <li>TUE</li>
+                                        <li>WED</li>
+                                        <li>THU</li>
+                                        <li>FRI</li>
+                                        <li>SAT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="calendarBox"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="calendarSection calendar02">
+                        <div class="calendarIMG">
+                            <div>
+                                <span class="ex_file"><img class="Calendar_img" src="./img/imgplus.png"></span>
+                            </div>
+                        </div>
+                        <div class="calendarBoxAll">
+                            <div class="calendarMonthSection">
+                                <div class="calendarMonth calendarMonth2"></div>
+                                <div class="calendarYear calendarYear2"></div>
+                                <div class="calendarWeek">
+                                    <ul>
+                                        <li>SUN</li>
+                                        <li>MON</li>
+                                        <li>TUE</li>
+                                        <li>WED</li>
+                                        <li>THU</li>
+                                        <li>FRI</li>
+                                        <li>SAT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="calendarBox2"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="prne">
+                        <button class="prev" onclick="prev()"><img src="https://img.icons8.com/material-rounded/24/000000/chevron-left.png"/></button>
+                        <button class="next" onclick="next()"><img src="https://img.icons8.com/material-rounded/24/000000/chevron-right.png"/></button>
+                    </div>
+                </div> 
+            </div>
+            <span class="border_line"></span>
+        </section>
+        <div id="footer">
+            <p>@LIMBORA BLOG</p>
+        </div>
+        
+    </div>
+    <script src="./js/drag.js"></script>
+    <script src="./js/upload.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/notice.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/guestbook.js"></script>
+</body>
+</html>

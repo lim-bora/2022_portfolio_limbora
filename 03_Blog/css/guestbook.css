@@ -1,0 +1,150 @@
+*{margin:0; padding:0; border:0;box-sizing: border-box;}
+li,ul{list-style:none;}
+	a{text-decoration:none; color:#000;}
+	
+.cf:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+@font-face{
+    src: url("../font/PathwayGothicOne-Regular.ttf");
+    font-family:"PathwayGothicOne";	
+}
+@font-face{
+    src: url("../font/Jua-Regular.ttf");
+    font-family:"Jua";	
+}
+
+
+.bored .boredSection{
+    width: 780px;
+    height: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+.boredTxtBox{
+    width: 95%;
+    height: 15%;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+    display: flex;
+    margin-left: 20px;
+}
+.boredTxtBox button{
+    border-radius: 8px;
+    line-height: 0;
+    width: 20%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 19.2px;
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: 0 3px 3px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    outline-style: none;
+    text-shadow: 1px 1px 0 #fff;
+}
+.boredTxtBox #reset{
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+}
+#print{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 50px;
+    font-size: 22px;
+    color:#61677C;
+    display: inline-block;
+    float: left;
+    text-shadow: 1px 1px 0 #fff;
+    outline-style: none;
+    font-family: "Jua"
+}
+.resultBox{
+    width: 100%;
+    height: 80%;
+}
+.result{
+    border-radius: 8px;
+    line-height: 0;
+    width: 96%;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19.2px;
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: 0 3px 3px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #fff;
+    outline-style: none;
+    text-shadow: 1px 1px 0 #fff;
+    position: relative;
+    z-index: 1;
+    transition: all 700ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
+    font-family: "Jua"
+}
+.OpenCheck{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 14px;
+}
+.OpenCheck .onCheck01,.onCheck02,.onCheck03{
+    width: 6px;
+    height: 6px;
+    background: #4F8AFE;
+    margin: 3px;
+    border-radius: 100%;
+    transition: all 700ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
+}
+.resultClose{
+    opacity: 0;
+    padding: 18px 0px 12px 52px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 94px; 
+    height: 60px;
+    background: #4F8AFE;
+    border-radius: 0 10px 10px 0;
+    transition: all 700ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
+}
+.closebtn01,
+.closebtn02{
+    width: 5px;
+    height: 27px;
+    background-color: #fff;
+    position: absolute;
+}
+.closebtn01{
+    transform: rotateZ(45deg);
+}
+.closebtn02{
+    transform: rotateZ(-45deg);
+}
+.div{
+    margin: 10px 0 10px 20px;
+    position: relative;
+}

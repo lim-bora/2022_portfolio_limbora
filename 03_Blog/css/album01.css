@@ -1,0 +1,133 @@
+*{margin:0; padding:0; border:0;box-sizing: border-box;}
+li,ul{list-style:none;}
+	a{text-decoration:none; color:#000;}
+	
+.cf:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+@font-face{
+    src: url("../font/PathwayGothicOne-Regular.ttf");
+    font-family:"PathwayGothicOne";	
+}
+@font-face{
+    src: url("../font/Jua-Regular.ttf");
+    font-family:"Jua";	
+}
+
+.album01 .gallerySection{
+    width: 800px;
+    height: 95%;
+    margin:0 auto;
+    background-color: #fff;
+}
+.gallerySection ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.gallerySection ul li.gallery{
+    width: 32.5%;
+    height: 32.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    transition: all 0.3s;
+    overflow: hidden;
+    border-radius: 13px;
+    box-shadow: 0 3px 3px #BABECC;
+}
+.galleryCM{
+    box-shadow: 0 3px 3px #BABECC;
+    opacity: 0;
+}
+.gallerySection ul li.gallery:nth-child(1){z-index: 999; padding: 0 1px 1px 0;}
+.ex_file {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+.ex_file .target_img{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    padding: 70px;
+}
+.gallery01 > img{
+    width: 100%;
+    padding: 70px;
+}
+
+.galleryCM button{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 55px;
+    height: 55px;
+    background-color: #D18181;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    transition: all .5s;
+    outline-style: none;
+    z-index: 99;
+}
+.galleryCM button:after{
+    content: '\e9c5';
+    font-family: 'xeicon';
+    font-size: 25px;
+}
+.galleryCM .galleryTxt{
+    /* opacity: 0; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: all 2s;
+}
+.Gbox{
+    width: 100%;
+    height: 100%; 
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 3s;
+    z-index: 20;
+    display: none;
+}
+.Gbox .galleryTxtInput{
+    width: 100%;
+    height: 100%; 
+    background-color: transparent;
+    padding: 80px 42px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    /* font-weight: bold; */
+    line-height: 1.5;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    font-family: "Jua"
+}
+.galleryCM button.on{
+    transform: rotate(45deg);
+}
+
+
+.hide{
+    display: none;
+}
+

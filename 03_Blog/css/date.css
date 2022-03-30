@@ -1,0 +1,197 @@
+*{margin:0; padding:0; border:0;box-sizing: border-box;}
+li,ul{list-style:none;}
+	a{text-decoration:none; color:#000;}
+	
+.cf:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+@font-face{
+    src: url("../font/PathwayGothicOne-Regular.ttf");
+    font-family:"PathwayGothicOne";	
+}
+
+.album02{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.album02 .calendarSection{
+    width: 780px;
+    height: 95%;
+    margin:0 auto;
+    background-color: #fff;
+    transform-origin: top left;
+    transition: 1s; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.calendar01{z-index: 1;}
+.calendarSection .calendarIMG{  
+    width: 100%;
+    height: 50%;
+    padding: 25px 15% 0 15%;
+    position: relative;
+}
+.calendarIMG div{
+    width: 100%;
+    height: 100%;
+}
+.calendarIMG .palet{
+    width: 50px;
+    height: 176px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+.palet ul{
+    width: 100%;
+    height: 100%;
+}
+.palet ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.palet ul li:nth-child(1){background-color: #FEE893;}
+.palet ul li:nth-child(2){background-color: #F3D4D1;}
+.palet ul li:nth-child(3){background-color: #EFD5BC;}
+.palet ul li:nth-child(4){background-color: #CBE3CD;}
+.palet ul li:nth-child(5){background-color: #B3D8EA;}
+.calendarSection .calendarBoxAll{
+    width: 100%;
+    height: 50%;
+    padding: 0 15%;
+    padding: 0.5%;   
+}
+.calendarBox{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.calendar__day {
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(97% / 7);
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    position: relative;
+}
+.Calendar_img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 3px #BABECC;
+}
+.horizontalGutter {
+    margin-right: 0.5%;
+}
+
+.verticalGutter {
+    margin-top: 0.5%;
+}
+.calendarMonthSection{
+    width: 100%;
+    height: 20%;
+}
+.calendarMonthSection .calendarMonth{
+    width: 80%;
+    height: 70%;
+    font-family: "PathwayGothicOne";
+    font-size: 30px;
+    text-align: center;
+    padding: 12px 12px 12px 169px;
+    letter-spacing: 2;
+    float: left;
+}
+.calendarMonthSection .calendarYear{
+    width: 20%;
+    height: 70%;
+    font-family: "PathwayGothicOne";
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 12px 12px 41px;
+    letter-spacing: 2px;
+    float: left;
+    font-weight: bold;
+    color: #252525;
+}
+.calendarMonthSection .calendarWeek{
+    width: 100%;
+    height: 30%;
+}
+.calendarWeek ul{
+    width: 100%;
+    height: 100%;
+}
+.calendarWeek ul li{
+    float: left;
+    width: 14.28%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.prne{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+.prne button{
+    background-color: #fff;
+    z-index: 99;
+    outline-style: none;
+    cursor: pointer;
+}
+.prev{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+.next{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+
+
+.checkONE{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+.textarea{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    color: #555;
+}
